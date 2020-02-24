@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <span> &nbsp; </span>
+  <button mat-icon-button (click)="goHome()">
+    <mat-icon aria-label="home icon">home</mat-icon>
+  </button>
+  <span noWrap=false> Weather App </span>
+  <span class="example-spacer"></span>
+  <span> &nbsp;</span>
+  <button mat-icon-button (click)="addCity()">
+      <mat-icon aria-label="add City icon">add</mat-icon>
+  </button>
+</mat-toolbar>
+<router-outlet></router-outlet>

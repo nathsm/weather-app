@@ -1,0 +1,21 @@
+<p>Add Location</p>
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
+    <!-- <div fxLayout="column" fxLayoutAlign="flex-start" fxLayoutGap="1vw"> -->
+    <div>
+        <mat-form-field>
+            <input matInput type="text" name="cityName" placeholder="City" ngModel/>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="text" name="country" placeholder="Country"
+                ngModel/>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="text" name="imageurl" placeholder="Image Url"
+                ngModel/>
+        </mat-form-field>
+        <button type="submit" mat-raised-button>Submit</button>
+    </div>
+</form>

@@ -1,0 +1,26 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>{{city}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="imageUrl" alt="Photo of Weather">
+    <mat-card-content>
+      <p>
+        Temperature : {{model.temp - 273.15 | number}}
+      </p>
+      <p>
+        Pressure : {{model.pressure | number}} hPa
+      </p>
+      <p>
+        Humidity : {{model.humidity | number}} %
+      </p>
+      <p>
+        Remarks : {{model.description }} 
+      </p>
+      <p>
+        Wind Speed - Degree : {{model.windSpeed }} - {{model.windDegree }} 
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="goBack()">Back</button>
+    </mat-card-actions>
+</mat-card>
